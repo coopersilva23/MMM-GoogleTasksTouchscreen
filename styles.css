@@ -1,0 +1,47 @@
+/* Container grid layout */
+.MMM-GoogleTasks .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px; /* Adds spacing between columns */
+    transform: translateY(-.6em);
+}
+
+/* Basic item styling */
+.MMM-GoogleTasks .task {
+    cursor: pointer; /* Indicates that the item is clickable */
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for tasks */
+.MMM-GoogleTasks .task:hover {
+    background-color: #e0e0e0;
+}
+
+/* Date and notes styling */
+.MMM-GoogleTasks .item.date {
+    padding-left: 1.7em;
+    text-align: right;
+}
+
+.MMM-GoogleTasks .item.notes {
+    padding-left: .95em;
+    font-size: 0.8em;
+    padding-bottom: 0;
+}
+
+.MMM-GoogleTasks .item.child {
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+/* Font Awesome icon styling */
+.MMM-GoogleTasks .fa {
+    vertical-align: middle;
+    padding-bottom: .25em;
+    padding-right: .25em;
+    font-size: 0.60em;
+}
